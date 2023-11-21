@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_send_whatsapp_wizard_form_odoo_api_whatsapp" model="ir.ui.view">
+        <field name="name">view.send.whatsapp.wizard.form.odoo.api.whatsapp</field>
+        <field name="model">send.whatsapp.wizard</field>
+        <field name="arch" type="xml">
+            <form string="send">
+                <sheet>
+                    <group>
+                        <field name="sale_order" invisible='1' />
+                        <field name="phone_number"/>
+                        <field name="template_email" domain="[('model_id','=','sale.order')]" />
+                        <field name="body_text"/>                  
+                    </group>
+                    
+                </sheet>
+                <footer>
+                    <button string="Open Whatsapp" name="send_message" type="object" class="oe_highlight"/>
+                </footer>
+            </form>
+            
+        </field>
+    
+    </record>
+
+
+
+</odoo>
