@@ -8,8 +8,9 @@
             <form string="send">
                 <sheet>
                     <group>
+
                         <field name="sale_order" invisible='1' />
-                        <field name="phone_number"/>
+                        <field name="send_number"/>
                         <field name="template_email" domain="[('model_id','=','sale.order')]" />
                         <field name="body_text"/>                  
                     </group>

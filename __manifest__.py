@@ -16,9 +16,6 @@
         'views/sale_order.xml',
         
     ],
-    'demo': [
-        ''
-    ],
     'auto_install': False,
     'application': False,
     'assets': {
